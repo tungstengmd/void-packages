@@ -1,6 +1,6 @@
 # Template file for 'contour'
 pkgname=contour
-version=0.4.3.6442
+version=0.6.1.7494
 revision=1
 build_style=cmake
 build_helper="qemu"
@@ -18,7 +18,7 @@ maintainer="0x5c <dev@0x5c.io>"
 license="Apache-2.0"
 homepage="http://contour-terminal.org/"
 distfiles="https://github.com/contour-terminal/contour/archive/refs/tags/v${version}.tar.gz"
-checksum=859910a5330d9dcf628dfcb6f767807dbdaf187e550ac67966c1e8a713c1567e
+checksum=15090a08cf05124bf05074130cc6460d1d34c6d80f1058c63202effa032b8f6f
 
 contour-terminfo_package() {
 	short_desc+=" - terminfo data"
