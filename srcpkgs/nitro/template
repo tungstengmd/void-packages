@@ -1,15 +1,18 @@
 # Template file for 'nitro'
 pkgname=nitro
-version=0.3
+version=0.4.1
 revision=1
 build_style=gnu-makefile
+checkdepends="ruby"
 short_desc="Tiny but flexible init system and process supervisor"
 maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="0BSD"
 homepage="https://github.com/leahneukirchen/nitro"
 changelog="https://github.com/leahneukirchen/nitro/blob/master/NEWS.md"
 distfiles="https://github.com/leahneukirchen/nitro/archive/refs/tags/v${version}.tar.gz"
-checksum=5672190ad8527b96875e75886dc8785373020e3ed53511c1758c8c7debd6999a
+checksum=46f70ec4bcb0c2b46b80ebec17fc5a956df5d5438c3e44eac51facee4c90e709
+
+CPPFLAGS="-DREOPEN_USE_DUP_HACK"
 
 if [ "$XBPS_TARGET_LIBC" = "musl" ]; then
 	CFLAGS="-Os -Wl,--gc-sections"
